@@ -11,23 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" id="start">
-        <div class="top-header">
-            <div class="menu-hamburger">
-                <a href="https://adalab.es/">
-                    <img src= "./assets/images/menu-hamburger.png" alt="icono de menú">
-                </a>
-            </div>
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="logo de Open Spaces" >
-            </div>
+    <header class="header">
+        <div class="menu-hamburger">
+            <a href="https://adalab.es/">
+                <img src= "./assets/images/menu-hamburger.png" alt="icono de menú">
+            </a>
         </div>
-        <h1 class="main-title">Disfruta creando espacios</h1>
-        <button class="button-buy-1">
-            <a href="https://adalab.es/" target="_blank">Comprar ahora</a>
-        </button>
+        <div class="menu-desktop">
+            <a>Productos</a>
+            <a>Colecciones</a>
+            <a>Tienda</a>
+            <a>Inicio</a>
+        </div>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo de Open Spaces" >
+        </div>
     </header>
-
+    
+    <section class="main-section" id="start">
+        <h1 class="main-title">Disfruta creando espacios</h1>
+        <div>
+            <button class="button-buy-1">
+                <a href="https://adalab.es/" target="_blank">Comprar ahora</a>
+            </button>
+        </div>
+    </section>
+    
     <section class="benefits-section">
         <h2 class="benefits-title">Volverse organizado se siente mejor con OPEN SPACES</h2>
         <div class="benefits-container">
@@ -65,12 +74,18 @@
     </section>
 
     <section class="enjoy-section">
-        <h2 class="enjoy-title">Disfruta creando espacios</h2>
-        <p class="enjoy-paragraph">Una línea de productos diseñados para todos tus espacios</p>
-        <button class="button-buy-1">
-            <a href="https://adalab.es/" target="_blank">Comprar ahora</a>
-        </button>
-        <img src="./assets/images/creando-espacios.jpg" alt="detalle de un cuarto de baño con dos cestas en el suelo con papel higiénico y toallas, y una papelera al fondo" >
+        <div class="enjoy-container">
+            <h2 class="enjoy-title">Disfruta creando espacios</h2>
+            <p class="enjoy-paragraph">Una línea de productos diseñados para todos tus espacios</p>
+            <div>
+                <button class="button-buy-3">
+                    <a href="https://adalab.es/" target="_blank">Comprar ahora</a>
+                </button>
+            </div>
+        </div>
+        <div class="bath-image-box">
+            <img class="bath-image" src="./assets/images/creando-espacios.jpg" alt="detalle de un cuarto de baño con dos cestas en el suelo con papel higiénico y toallas, y una papelera al fondo" >
+        </div>
     </section>
 
     <footer class="footer">
@@ -88,12 +103,14 @@
                 <a class="footer-link" href="https://adalab.es/">Nuestra historia</a>
                 <a class="footer-link" href="https://adalab.es/">Ayuda</a>
         </div>
-        <h3 class="footer-title">Contacto</h3>
-            <p>ayuda@openspaces.com <br/> Socios</p>
-        <div class="social-icons">
-            <img src="./assets/images/brand-linked-in.png" alt="icono Linkedin" >
-            <img src="./assets/images/brand-instagram.png" alt="icono Instagram" >
-            <img src="./assets/images/brand-twitter.png" alt="icono Twitter" >  
+        <div class="footer-section">
+            <h3 class="footer-title">Contacto</h3>
+                <p class="contact">ayuda@openspaces.com <br/> Socios</p>
+            <div class="social-icons">
+                <img src="./assets/images/brand-linked-in.png" alt="icono Linkedin" >
+                <img src="./assets/images/brand-instagram.png" alt="icono Instagram" >
+                <img src="./assets/images/brand-twitter.png" alt="icono Twitter" >  
+            </div>
         </div>
         <div class="go-up">
             <a href="#start">

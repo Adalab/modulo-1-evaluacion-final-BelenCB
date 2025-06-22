@@ -8,18 +8,6 @@ body {
 }
 
 .header {
-    height: 100vh;
-    text-align: center;
-    color: #0c474b;
-    background-image: url(./assets/images/header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.top-header {
     width: 100vw;
     background-color: #f0ebe5;
     padding-top: 20px;
@@ -35,29 +23,47 @@ body {
     left: 20px;
 }
 
+.menu-desktop {
+    color: #0c474b;
+    font-size: 16px;
+    display: none;
+}
+
+.main-section {
+    height: 100vh;
+    text-align: center;
+    color: #0c474b;
+    background-image: url(./assets/images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-title {
     font-size: 24px;
     font-weight: 600;
     margin-top: 400px;
 }
 
-.button-buy-1 {
+.button-buy-1, .button-buy-3 {
     background-color: #0c474b;
     color: white;
     border: none;
     padding: 12px 24px;
-    margin: 50px 140px 100px 140px;
+    margin: 50px 0 100px 0;
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 600;
 }
 
-.button-buy-1 > a {
+.button-buy-1 > a , .button-buy-3 > a {
     color: white;
     text-decoration: none;
 }
 
-.button-buy-1 > a:hover {
+.button-buy-1 > a:hover, .button-buy-3 > a:hover {
     color: #ff975a
 }
 
@@ -72,7 +78,7 @@ body {
 .benefits-title {
     font-size: 24px;
     font-weight: 600;
-    padding: 50px;
+    padding: 50px 100px;
 }
 
 .benefits-container {
@@ -140,9 +146,18 @@ body {
 }
 
 .enjoy-paragraph {
-    font-size: 16px;
-    margin-left: 30px;
-    margin-right: 30px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.bath-image-box {
+    width: 100%;
+}
+
+.bath-image {
+    width: 100%;
+    display: block;
 }
 
 .footer {
@@ -164,6 +179,12 @@ body {
 .footer-link {
     color: #b6c8c9;
     text-decoration: none;
+    font-size: 14px;
+}
+
+.contact {
+    font-size: 14px;
+    margin-top: 0;
 }
 
 .social-icons {
@@ -177,4 +198,143 @@ body {
     padding-bottom: 15px;
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (min-width: 900px) {
+    .main-section {
+        text-align: left;
+        padding-left: 150px;
+    }
+
+    .main-title {
+        font-size: 36px;
+        font-weight: 600;
+        margin-right: 420px;
+    }
+
+    .button-buy-1, .button-buy-3 {
+        margin-top: 5px;
+    }
+
+    .benefits-section {
+        padding: 1px 50px 70px 50px;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .benefit-subtitle {
+        margin: 30px 30px 0 30px;
+    }
+
+    .benefit-paragraph {
+        margin: 10px 40px 30px 40px;
+    }
+
+    .shipment-title, .enjoy-title {
+        font-size: 30px;
+    }
+
+    .enjoy-section {
+        padding-top: 40px;
+    }
+
+    .enjoy-paragraph {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .footer {
+        padding: 50px 50px 70px 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .go-up {
+        align-self: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .menu-hamburger {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        position: absolute;
+        left: 280px;
+        gap: 30px;
+    }
+
+    .main-title {
+        margin-right: 1250px;
+    }
+
+    .benefits-section {
+        padding: 1px 150px 70px 150px;
+    }
+
+    .benefits-title {
+        font-size: 36px;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .benefit-subtitle {
+        margin: 30px 130px 0 130px;
+    }
+
+    .benefit-paragraph {
+        margin: 10px 130px 30px 130px;
+    }
+
+    .shipment-title {
+        font-size: 36px;
+    }
+
+    .enjoy-section {
+        text-align: left;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .enjoy-container {
+        width: 50%;
+    }
+
+    .bath-image-box {
+        width: 50%;
+    }
+
+    .enjoy-title {
+        font-size: 36px;
+        margin: 160px 200px 0 250px;
+    }
+
+    .enjoy-paragraph {
+        font-size: 16px;
+        margin: 10px 320px 10px 250px;
+    }
+
+    .button-buy-3 {
+        margin: 10px 0 0 250px;
+    }
+
+    .footer {
+        padding: 100px 90px 100px 220px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .footer-link, .contact {
+        font-size: 16px;
+    }
 }
